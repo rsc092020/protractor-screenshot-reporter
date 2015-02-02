@@ -1,6 +1,6 @@
 {
   "name": "protractor-screenshot-reporter",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Use the screenshot reporter to capture screenshots from your Selenium nodes after each executed Protractor test case.",
   "main": "index.js",
   "repository": {
