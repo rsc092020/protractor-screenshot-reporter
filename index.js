@@ -45,10 +45,10 @@ function defaultMetaDataBuilder(suite, spec, descriptions, results, capabilities
 	var metaData = {
 			description: descriptions.reverse().join(' ')
 			, passed: results.status === 'passed'
-			, os: capabilities.caps_.platform
+			, os: capabilities.get('platform')
 			, browser: {
-				name: capabilities.caps_.browserName
-				, version: capabilities.caps_.version
+				name: capabilities.get('browserName')
+				, version: capabilities.get('version')
 			}
 		};
 
