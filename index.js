@@ -157,7 +157,7 @@ function specDone(spec) {
 		, spec = self.getSpec(spec)
 		, suite = self.currentSuite
 
-	if(!self.takeScreenShotsForSkippedSpecs && spec.status === 'skipped') {
+	if(!self.takeScreenShotsForSkippedSpecs && (spec.status === 'pending' || spec.status === 'disabled')) {
 		return;
 	}
 	if(self.takeScreenShotsOnlyForFailedSpecs && spec.status === 'passed') {
