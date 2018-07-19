@@ -167,7 +167,7 @@ function specDone(spec) {
 	browser.takeScreenshot().then(function (png) {
 		browser.getCapabilities().then(function (capabilities) {
 			var descriptions = util.gatherDescriptions(
-					spec
+					suite
 					, [spec.description]
 				)
 
